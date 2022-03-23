@@ -1,0 +1,75 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+#editor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 65vw;
+}
+
+#log {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 35vw;
+  height: 100%;
+  background: #515151;
+  padding: 2rem;
+
+  font-size: 1.3rem;
+  color: white;
+}
+
+  #log p {
+    margin: 0;
+  }
+
+ #run {
+   position: absolute;
+   bottom: 2rem;
+   right: 2rem;
+
+   height: 4rem;
+   width: 13rem;
+
+   border-radius: 2rem;
+   border: none;
+
+   color: white;
+   background: #E96E2F;
+
+   outline: none;
+   cursor: pointer;
+   transition: all 0.3s ease;
+
+   text-transform: uppercase;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 1.4rem;
+ }
+   #run:hover, #run:active {
+     background: #cb5417;
+     transform: translateY(-10%);
+   }
