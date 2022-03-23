@@ -73,3 +73,27 @@ html, body {
      background: #cb5417;
      transform: translateY(-10%);
    }
+
+
+@media(max-width: 780px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #editor {
+    bottom: auto;
+    height: calc(100vh - 300px);
+    width: 100vw;
+  }
+
+  #log {
+    top: auto;
+    bottom: 0px;
+    height: 300px;
+    width: 100vw;
+  }
+
+  #run {
+
+  }
+}
